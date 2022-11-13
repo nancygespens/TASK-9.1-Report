@@ -11,10 +11,11 @@ sourceCompatibility = 11
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
+
 allure {
-    version = '2.16.1'
+    version = '2.19.0'
     useJUnit5 {
-        version = '2.16.1'
+        version = '2.19.0'
     }
 }
 
@@ -23,10 +24,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    testImplementation 'com.codeborne:selenide:5.19.0'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation 'com.codeborne:selenide:6.9.0'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.19.0'
 }
 
 test {
